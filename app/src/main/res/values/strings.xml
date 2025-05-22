@@ -1,3 +1,12 @@
 <resources>
     <string name="app_name">MiniSocFeed</string>
+    <string name="no_feed">No Feed yet</string>
+    <string name="report">Report</string>
+    <string name="likes">Likes</string>
+    <string name="comments">Comments</string>
+    <string name="user_name">User Name</string>
+    <string name="content_description">image</string>
+    <string name="count">20</string>
+    <string name="post_caption_text"><b>Allie_Gretter_02</b> <font color='#38383D'>Lorem ipsum dolor sit amet, consectetur adipiscing elit.🥰🍑</font></string>
+    <string name="day_ago">7 days ago</string>
 </resources>
