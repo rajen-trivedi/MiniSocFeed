@@ -53,25 +53,21 @@
             app:cardBackgroundColor="@android:color/transparent"
             app:cardCornerRadius="@dimen/_12sdp">
 
-            <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/postImageView"
+            <androidx.viewpager2.widget.ViewPager2
+                android:id="@+id/mediaViewPager"
                 android:layout_width="match_parent"
-                android:layout_height="match_parent"
-                android:contentDescription="@string/content_description"
-                android:scaleType="centerCrop"
-                android:src="@drawable/img_image_placeholder"
-                android:visibility="visible" />
+                android:layout_height="300dp" />
 
- <!--           <androidx.appcompat.widget.AppCompatImageView
-                android:id="@+id/muteIcon"
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/mediaCounter"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:layout_gravity="bottom|end"
-                android:layout_marginEnd="@dimen/_7sdp"
-                android:layout_marginBottom="@dimen/_7sdp"
-                android:contentDescription="@string/content_description"
-                android:src="@drawable/ic_un_mute"
-                android:visibility="visible" />-->
+                android:layout_gravity="end"
+                android:background="@android:drawable/progress_horizontal"
+                android:padding="8dp"
+                android:text="1/1"
+                android:textColor="@color/white"
+                android:visibility="visible" />
         </com.google.android.material.card.MaterialCardView>
 
         <!--Users View-->

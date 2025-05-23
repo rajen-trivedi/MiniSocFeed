@@ -5,7 +5,7 @@
     android:id="@+id/main"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.MainActivity">
 
     <RelativeLayout
         android:layout_width="match_parent"
@@ -15,15 +15,40 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent">
 
+        <com.facebook.shimmer.ShimmerFrameLayout
+            android:id="@+id/shimmerLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:visibility="gone"
+            app:shimmer_auto_start="true"
+            app:shimmer_duration="1500">
+
+            <include layout="@layout/feed_post_view" />
+
+            <include layout="@layout/feed_post_view" />
+
+            <include layout="@layout/feed_post_view" />
+
+            <include layout="@layout/feed_post_view" />
+
+            <include layout="@layout/feed_post_view" />
+
+            <include layout="@layout/feed_post_view" />
+
+            <include layout="@layout/feed_post_view" />
+
+            <include layout="@layout/feed_post_view" />
+        </com.facebook.shimmer.ShimmerFrameLayout>
+
         <androidx.appcompat.widget.AppCompatTextView
             android:id="@+id/noFeedTxt"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_centerInParent="true"
             android:text="@string/no_feed"
-            android:visibility="gone"
             android:textColor="@color/black"
-            android:textSize="@dimen/_20ssp" />
+            android:textSize="@dimen/_20ssp"
+            android:visibility="gone" />
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/postsView"
